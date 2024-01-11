@@ -75,6 +75,11 @@ aside {
     height: 40px;
 }
 
+.aside-above .logo-small {
+    height: 22px;
+    display: none;
+}
+
 /* -------------------- */
 
 .playlist figcaption {
@@ -154,6 +159,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 
     gap: 20px;
     padding-top: 110px;
@@ -222,4 +228,74 @@ section {
 
 .artist{
     border-radius: 50%;
+}
+
+/* -------------------- */
+
+@media screen and (max-width: 1024px) {
+    .section-row {
+        flex-wrap: wrap;
+    }
+    .row-element {
+        max-width: calc(100% / 4 - 10px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-row {
+        flex-wrap: wrap;
+    }
+    .row-element {
+        max-width: calc(100% / 2 - 10px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-row {
+        flex-wrap: wrap;
+    }
+    .row-element {
+        max-width: calc(100% / 2 - 10px);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .playlist {
+        display: none;
+    }
+
+    aside {
+        width: 50px;
+    }
+
+    .aside-above .logo {
+        display: none;
+    }
+
+    .aside-above .logo-small {
+        display: flex;
+    }
+
+    .aside-above {
+        width: 100%;
+        align-items: center;
+    }
+
+    .menu {
+        align-items: center;
+        margin-left: -12px;
+    }
+
+    .aside-below {
+        width: 100%;
+        align-items: center;
+    }
+
+    .aside-container p {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
 }

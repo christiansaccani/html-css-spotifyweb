@@ -167,10 +167,14 @@ section {
     right: 0;
     left: 0;
 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
     height: 90px;
 
     text-align: end;
-    padding: 20px 20px;
+    padding-right: 23px;
 
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -178,6 +182,14 @@ section {
 .upgrade a {
     text-decoration: none;
     color: white;
+
+    padding: 10px 20px;
+    border: white 1px solid;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .section-explore {
@@ -204,12 +216,16 @@ section {
 .row-title {
     padding-left: 20px;
 
+    font-size: 20px;
+    font-weight: 800;
+
     color: white;
 }
 
 .row-sub {
     padding-left: 20px;
     margin-top: 15px;
+    font-weight: 600;
 
     color: #808080;
 }
@@ -244,11 +260,16 @@ section {
 }
 
 .element-title {
+    text-align: center;
     color: white;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .element-sub {
     color: #808080;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .artist{
@@ -420,7 +441,7 @@ footer {
     border-radius: 20px;
 }
 
-/* -------------------- */
+/* ----------  RESPONSIVE  ---------- */
 
 @media screen and (max-width: 1024px) {
     .section-row {
@@ -508,4 +529,10 @@ footer {
     .aside-container p {
         display: none;
     }
+
+    hr {
+        display: none;
+    }
 }
+
+/* -------------------- */

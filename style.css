@@ -34,6 +34,8 @@ aside {
     overflow-y: auto;
     overflow-x: hidden;
 
+    padding-top: 15px;
+
     z-index: 10;
 }
 
@@ -94,6 +96,10 @@ aside {
     border-radius: 2px;
 }
 
+.menu-element:first-of-type img{
+    filter: invert(0%);
+}
+
 .menu-element img {
     height: 22px;
     filter: invert(50%);
@@ -101,10 +107,12 @@ aside {
 
 .aside-above .logo {
     height: 40px;
+    padding-left: 20px;
 }
 
 .aside-above .logo-small {
     height: 22px;
+    padding-left: 20px;
     display: none;
 }
 
@@ -301,6 +309,33 @@ section {
 
 .element-img {
     max-width: 100%;
+    z-index: 1;
+}
+
+.row-play {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.row-element .fa-circle-play {
+    position: absolute;
+    text-align: center;
+
+    top: 0px;
+    left: 0px;
+
+    height: 100%;
+    width: 100%;
+
+    display: none;
+
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
+
+    font-size: 75px;
+
+    z-index: 2;
 }
 
 .element-title {
@@ -562,7 +597,6 @@ footer {
 
     .aside-above .menu {
         align-items: center;
-        /* margin-left: -12px; */
     }
 
     .aside-container p {
@@ -573,8 +607,24 @@ footer {
         align-items: center;
     }
 
+    /* .aside-below .ab-download{
+        margin-left: -2.65px;
+    } */
+
     hr {
         display: none;
+    }
+
+    .menu-element {
+        padding-left: 0px;
+    }
+    
+    .menu-element:first-of-type {
+        padding-left: 0px;
+    }
+    
+    .aside-above .logo-small {
+        padding-left: 0px;
     }
 }
 
@@ -594,8 +644,67 @@ footer {
     color: white;
 }
 
+.ab-download:hover {
+    color: white;
+}
+
+.ab-download:hover img{
+    filter: invert(0%);
+}
+
 /* -------------------- */
 
 .section-explore a:hover {
     color: white;
+}
+
+.upgrade a:hover {
+    text-decoration: none;
+    color: white;
+
+    padding: 10px 20px;
+    border: white 1px solid;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* -------------------- */
+
+.track-save i:hover {
+    color: white;
+}
+
+.player-buttons button:hover {
+    color: #1fde64;
+}
+
+.footer-items i:hover {
+    color: #1fde64;
+}
+
+.row-play:hover .fa-circle-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-play.artist:hover .fa-circle-play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-height: 98%;
+
+    border-radius: 100px;
+}
+
+.time-line:hover {
+    border-color: #1fde64;
+}
+
+.volume-line:hover {
+    border-color: #1fde64;
 }

@@ -32,8 +32,8 @@
                         <div class="playlist">
                             <figcaption>PLAYLIST</figcaption>
                             <ul>
-                                <li>
-                                    Crea Playlist
+                                <li class="crea-pl">
+                                    <i class="fa-solid fa-square-plus"></i> Crea Playlist
                                 </li>
                                 <li>Nome Playlist</li>
                                 <li>Nome Playlist</li>
@@ -136,8 +136,45 @@
             </div>
         </section> <!--  larghezza adattabile  -->
     </main>
-    <footer> <!--  altezza fissa  -->
 
+    <footer> <!--  altezza fissa  -->
+        <div class="footer-container">
+            <div class="footer-track">
+                <div class="track-album">
+                    <img src="./img/metal_lifting.jpg" alt="">
+                    <div class="album-info">
+                        <div class="info-song">Sinister</div>
+                        <div class="info-artist">Artist</div>
+                    </div>
+                </div>
+                <div class="track-save">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+            </div>
+
+            <div class="footer-player">
+                <div class="player-buttons">
+                    <button><i class="fa-solid fa-shuffle"></i></button>
+                    <button><i class="fa-solid fa-backward-step"></i></button>
+                    <button><i class="fa-regular fa-circle-play"></i></button>
+                    <button><i class="fa-solid fa-forward-step"></i></button>
+                    <button><i class="fa-solid fa-rotate-right"></i></button>
+                </div>
+                <div class="player-time">
+                    <div class="time">0:25</div>
+                    <hr class="time-line"></hr>
+                    <div class="time">4:35</div>
+                </div>
+            </div>
+
+            <div class="footer-items">
+                <button><i class="fa-solid fa-bars"></i></button>
+                <button><i class="fa-solid fa-display"></i></button>
+                <button><i class="fa-solid fa-volume-high"></i></button>
+                <hr class="volume-line"></hr>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

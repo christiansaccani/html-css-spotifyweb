@@ -89,9 +89,10 @@ aside {
 }
 
 .menu-element:first-of-type {
+    posi
     color: white;
 
-    border-left: #1fde64 2px solid;
+    border-left: #1fde64 3px solid;
     padding-left: 20px;
     border-radius: 2px;
 }
@@ -256,11 +257,38 @@ section {
     text-decoration: none;
 }
 
-.section-explore a:first-of-type {
+.selected-explore {
+    position: relative;
+
+    height: auto;
+    width: auto;
+}
+
+.selected-explore a {
     border-bottom: #1fde64 2px solid;
     border-radius: 2px;
 
     color: white;
+}
+
+.selected-explore .empty-box {
+    position: absolute;
+
+    height: 4px;
+    width: 30%;
+    background-color: #141922;
+
+    z-index: 2;
+}
+
+.empty-box.one {
+    bottom: -3px;
+    left: 0px;
+}
+
+.empty-box.two {
+    bottom: -3px;
+    right: 0px;
 }
 
 /* -------------------- */
@@ -482,12 +510,31 @@ footer {
     padding-right: 1em;
 }
 
-.player-time .time-line{
+.time-lines {
+    position: relative;
+    width: 100%;
+}
+
+.time-lines .time-line{
     border: 2px #808080 solid;
     max-width: 430px;
     width: 100%;
 
     border-radius: 20px;
+}
+
+.time-lines .time-line-filled{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    border: 2px white solid;
+    max-width: 430px;
+    width: 20%;
+
+    border-radius: 20px;
+
+    z-index: 3;
 }
 
 /* -------------------- */
@@ -512,12 +559,31 @@ footer {
     font-size: 12px;
 }
 
+.volume-lines {
+    position: relative;
+    width: 100%;
+}
+
 .footer-items .volume-line{
     border: 2px #808080 solid;
     max-width: 120px;
     width: 100%;
 
     border-radius: 20px;
+}
+
+.volume-lines .volume-line-filled{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    border: 2px white solid;
+    max-width: 430px;
+    width: 50%;
+
+    border-radius: 20px;
+
+    z-index: 3;
 }
 
 /* ----------  RESPONSIVE  ---------- */
@@ -632,8 +698,6 @@ footer {
 
 .menu-element:hover {
     color: white;
-    border-left: #1fde64 1px solid;
-    border-radius: 1px;
 }
 
 .menu-element:hover img{
@@ -701,10 +765,10 @@ footer {
     border-radius: 100px;
 }
 
-.time-line:hover {
+.time-line-filled:hover {
     border-color: #1fde64;
 }
 
-.volume-line:hover {
+.volume-line-filled:hover {
     border-color: #1fde64;
 }

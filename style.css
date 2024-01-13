@@ -534,7 +534,22 @@ footer {
 
     border-radius: 20px;
 
-    z-index: 3;
+    
+}
+
+.ball {
+    position: absolute;
+    top: -150%;
+    left: calc(20% - 7.5px);
+
+    height: 15px;
+    width: 15px;
+
+    border-radius: 50%;
+    background-color: white;
+
+    z-index: 4;
+    filter: opacity(0);
 }
 
 /* -------------------- */
@@ -584,6 +599,10 @@ footer {
     border-radius: 20px;
 
     z-index: 3;
+}
+
+.volume-lines .ball {
+    left: calc(50% - 7.5px);
 }
 
 /* ----------  RESPONSIVE  ---------- */
@@ -737,6 +756,11 @@ footer {
 
 /* -------------------- */
 
+.album-info .info-artist:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .track-save i:hover {
     color: white;
 }
@@ -765,10 +789,18 @@ footer {
     border-radius: 100px;
 }
 
-.time-line-filled:hover {
+.time-lines:hover .time-line-filled {
     border-color: #1fde64;
 }
 
-.volume-line-filled:hover {
+.time-lines:hover .ball{
+    filter: opacity(1);
+}
+
+.volume-lines:hover .volume-line-filled {
     border-color: #1fde64;
+}
+
+.volume-lines:hover .ball{
+    filter: opacity(1);
 }

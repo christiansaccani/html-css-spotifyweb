@@ -94,7 +94,6 @@ aside {
 
     border-left: #1fde64 3px solid;
     padding-left: 20px;
-    border-radius: 2px;
 }
 
 .menu-element:first-of-type img{
@@ -696,21 +695,39 @@ footer {
         margin-left: -2.65px;
     } */
 
-    hr {
-        display: none;
-    }
-
     .menu-element {
         padding-left: 0px;
     }
     
     .menu-element:first-of-type {
-        padding-left: 0px;
+        padding-left: 5px;
     }
     
     .aside-above .logo-small {
         padding-left: 0px;
     }
+
+    .volume-lines {
+        display: none;
+    }
+
+    .time-lines {
+        display: none;
+    }
+
+    .time {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    main {
+        ::-webkit-scrollbar {
+            width: 5px;
+          }
+        }
 }
 
 /* ----------  HOVER  ---------- */

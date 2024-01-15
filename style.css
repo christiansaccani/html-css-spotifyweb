@@ -119,7 +119,9 @@ aside {
 /* -------------------- */
 
 .playlist {
+    max-height: 400px;
     padding-left: 20px;
+    overflow-y: auto;
 }
 
 .playlist figcaption {
@@ -171,6 +173,10 @@ li {
 
 .ab-profile img {
     height: 22px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    background-color: #808080
 }
 
 .aside-below {
